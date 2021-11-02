@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ya5-fg-bk3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="eAB-MG-jFa">
+            <objects>
+                <viewController id="Ya5-fg-bk3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1QB-0E-E87">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="a2x-hO-hZQ">
+                                <rect key="frame" x="20" y="44" width="374" height="612"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Aes-AO-gjZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="300"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="JQ8-cF-U8x">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="9US-lC-ch1"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="EqG-PZ-fWu">
+                                        <rect key="frame" x="0.0" y="308" width="374" height="304"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="237" translatesAutoresizingMaskIntoConstraints="NO" id="JXk-tC-H7a">
+                                                <rect key="frame" x="11.5" y="0.0" width="362.5" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prague" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7t-8k-nAf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83" height="31"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOw-M7-D82">
+                                                        <rect key="frame" x="320" y="0.0" width="42.5" height="31"/>
+                                                        <rect key="contentStretch" x="0.34999999999999998" y="0.29999999999999999" width="1" height="1"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system" title=""/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZTF-Xz-ddR">
+                                                <rect key="frame" x="1" y="53" width="373" height="198"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anQ-MX-xas">
+                                                        <rect key="frame" x="0.0" y="0.0" width="373" height="198"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="373" id="GaL-wG-LU8"/>
+                                                            <constraint firstAttribute="height" constant="198" id="eRg-2r-0PH"/>
+                                                        </constraints>
+                                                        <string key="text">Prague, Czech Praha, city, capital of the Czech Republic. Lying at the heart of Europe, it is one of the continent’s finest cities and the major Czech economic and cultural centre. The city has a rich architectural heritage that reflects both the uncertain currents of history in Bohemia and an urban life extending back more than 1,000 years..</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aLr-7l-TOC">
+                                                <rect key="frame" x="276.5" y="273" width="97.5" height="31"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4H-2x-lI6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="97.5" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Learn More"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vm7-Of-fJ8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a2x-hO-hZQ" firstAttribute="leading" secondItem="vm7-Of-fJ8" secondAttribute="leading" constant="20" id="NLi-kM-Ccu"/>
+                            <constraint firstItem="vm7-Of-fJ8" firstAttribute="trailing" secondItem="a2x-hO-hZQ" secondAttribute="trailing" constant="20" id="OAj-hL-1R4"/>
+                            <constraint firstItem="a2x-hO-hZQ" firstAttribute="top" secondItem="vm7-Of-fJ8" secondAttribute="top" id="R1D-OV-iPj"/>
+                            <constraint firstItem="a2x-hO-hZQ" firstAttribute="leading" secondItem="vm7-Of-fJ8" secondAttribute="leading" constant="20" id="Xdj-im-HHC"/>
+                            <constraint firstItem="vm7-Of-fJ8" firstAttribute="trailing" secondItem="a2x-hO-hZQ" secondAttribute="trailing" constant="20" id="jgG-rG-TlZ"/>
+                            <constraint firstItem="a2x-hO-hZQ" firstAttribute="top" secondItem="vm7-Of-fJ8" secondAttribute="top" id="tYZ-4R-ysf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="34A-mM-bX5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-107.24637681159422" y="-20.089285714285712"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="images" width="272" height="185"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dby-5o-hV8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="74X-rp-SV3">
+            <objects>
+                <viewController id="Dby-5o-hV8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vT7-dx-bEN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ea8-7O-Wjx">
+                                <rect key="frame" x="10" y="63" width="374" height="595"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="N" translatesAutoresizingMaskIntoConstraints="NO" id="jhm-p4-v2L">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="290"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="290" id="MXd-fS-6j7"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="290" id="RK9-wZ-rEV"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="hVj-Jj-ODE"/>
+                                            <constraint firstAttribute="width" constant="374" id="lBh-aR-Knq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="f4L-Fb-KYs">
+                                        <rect key="frame" x="0.0" y="291" width="374" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Norway" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rY0-Ef-QuI">
+                                                <rect key="frame" x="0.0" y="0.0" width="323" height="31"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4m-vh-8yI">
+                                                <rect key="frame" x="331" y="0.0" width="43" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="43" id="KY9-6e-J0L"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system" title=""/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qck-Hx-PMl">
+                                        <rect key="frame" x="0.0" y="323" width="374" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="374" id="8mR-PE-C0m"/>
+                                            <constraint firstAttribute="height" constant="240" id="EZY-t9-RFP"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="Hbi-fn-N9V"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="MhI-XY-bgS"/>
+                                        </constraints>
+                                        <string key="text">Norway is a Scandinavian country encompassing mountains, glaciers and deep coastal fjords. Oslo, the capital, is a city of green spaces and museums. Preserved 9th-century Viking ships are displayed at Oslo’s Viking Ship Museum. Bergen, with colorful wooden houses, is the starting point for cruises to the dramatic Sognefjord. Norway is also known for fishing, hiking and skiing, notably at Lillehammer’s Olympic resort.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghz-pH-3Xx">
+                                        <rect key="frame" x="241" y="564" width="133" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="133" id="hGd-2i-tFF"/>
+                                            <constraint firstAttribute="height" constant="31" id="riw-7J-mTO"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Learn More"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="f4L-Fb-KYs" secondAttribute="trailing" id="0R6-7E-7lr"/>
+                                    <constraint firstItem="f4L-Fb-KYs" firstAttribute="leading" secondItem="Ea8-7O-Wjx" secondAttribute="leading" id="AUI-Yr-7sB"/>
+                                    <constraint firstItem="jhm-p4-v2L" firstAttribute="leading" secondItem="Ea8-7O-Wjx" secondAttribute="leading" id="H4K-3Y-SZB"/>
+                                    <constraint firstItem="qck-Hx-PMl" firstAttribute="leading" secondItem="Ea8-7O-Wjx" secondAttribute="leading" id="M8i-HL-RZl"/>
+                                    <constraint firstItem="qck-Hx-PMl" firstAttribute="top" secondItem="f4L-Fb-KYs" secondAttribute="bottom" constant="1" id="fu9-bS-tXf"/>
+                                    <constraint firstAttribute="trailing" secondItem="jhm-p4-v2L" secondAttribute="trailing" id="teg-Rk-D3l"/>
+                                    <constraint firstAttribute="trailing" secondItem="qck-Hx-PMl" secondAttribute="trailing" id="uoa-PS-EdY"/>
+                                    <constraint firstItem="jhm-p4-v2L" firstAttribute="top" secondItem="Ea8-7O-Wjx" secondAttribute="top" id="usi-hn-Lqo"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I2V-U3-TAL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ea8-7O-Wjx" firstAttribute="leading" secondItem="I2V-U3-TAL" secondAttribute="leading" constant="10" id="2Y6-4D-33W"/>
+                            <constraint firstItem="Ea8-7O-Wjx" firstAttribute="top" secondItem="I2V-U3-TAL" secondAttribute="top" constant="19" id="3XT-Gd-ymJ"/>
+                            <constraint firstItem="I2V-U3-TAL" firstAttribute="trailing" secondItem="Ea8-7O-Wjx" secondAttribute="trailing" constant="10" id="gIW-Ri-5yc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ET-Tn-ony" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460.86956521739131" y="-68.303571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="N" width="2560" height="1536"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

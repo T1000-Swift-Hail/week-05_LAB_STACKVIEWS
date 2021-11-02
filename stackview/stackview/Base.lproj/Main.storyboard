@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="stackview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cKJ-GP-EJ2">
+                                <rect key="frame" x="20" y="56" width="374" height="786"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_kcn2d109p" translatesAutoresizingMaskIntoConstraints="NO" id="dPJ-FS-1ja">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="999" constant="300" id="fNl-yJ-dd5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="123" translatesAutoresizingMaskIntoConstraints="NO" id="aCD-ND-s0W">
+                                        <rect key="frame" x="0.0" y="320" width="374" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="United Arab Emirates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CxZ-Jb-YMc">
+                                                <rect key="frame" x="0.0" y="0.0" width="232" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="A6T-Zu-D9P">
+                                                <rect key="frame" x="355" y="-1" width="19" height="25"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="23" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kny-dz-lOA">
+                                        <rect key="frame" x="6" y="364" width="368" height="290"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="368" id="dim-Bf-sc7"/>
+                                            <constraint firstAttribute="height" constant="290" id="veh-iJ-4fN"/>
+                                        </constraints>
+                                        <string key="text">The United Arab Emirates is a federal state consisting of seven emirates stretching along the eastern coast of the Arabian Peninsula, namely: Abu Dhabi, Dubai, Sharjah, Ajman, Umm al-Quwain, Ras al-Khaimah, and Fujairah. The Emirate of Abu Dhabi is the largest of the seven emirates in area. The center of the country’s oil industries, and the capital of the Emirates, and the coastal emirate of Dubai is one of the most important commercial and financial centers in the region...</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9u-sT-T9x">
+                                        <rect key="frame" x="281" y="674" width="93" height="112"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="learn more"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dPJ-FS-1ja" firstAttribute="leading" secondItem="cKJ-GP-EJ2" secondAttribute="leading" id="ACK-wY-M4T"/>
+                                    <constraint firstAttribute="trailing" secondItem="aCD-ND-s0W" secondAttribute="trailing" id="EPV-6m-AJc"/>
+                                    <constraint firstAttribute="trailing" secondItem="kny-dz-lOA" secondAttribute="trailing" id="OOt-sg-Lpj"/>
+                                    <constraint firstItem="kny-dz-lOA" firstAttribute="leading" secondItem="cKJ-GP-EJ2" secondAttribute="leading" constant="6" id="iw0-kP-dAj"/>
+                                    <constraint firstItem="aCD-ND-s0W" firstAttribute="leading" secondItem="cKJ-GP-EJ2" secondAttribute="leading" id="mBN-0n-2dr"/>
+                                    <constraint firstAttribute="trailing" secondItem="dPJ-FS-1ja" secondAttribute="trailing" id="xbJ-jY-W1u"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cKJ-GP-EJ2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="alR-ha-NXy"/>
+                            <constraint firstItem="cKJ-GP-EJ2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="ccU-zI-6j4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cKJ-GP-EJ2" secondAttribute="bottom" constant="20" id="h7I-z4-8dy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cKJ-GP-EJ2" secondAttribute="trailing" constant="20" id="p3x-Xd-Flx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image_kcn2d109p" width="880" height="587"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "SII-Spain-B2B-VAT-reporting-with-SAP-Document-Compliance-in-SAP-ECC-S4HANA.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

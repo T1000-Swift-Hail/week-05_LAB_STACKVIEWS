@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NkT-j2-RVG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Kax-uW-grx">
+            <objects>
+                <viewController id="NkT-j2-RVG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dw6-jd-O7T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="y4W-rE-TG4">
+                                <rect key="frame" x="20" y="234" width="374" height="428"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="275" verticalHuggingPriority="251" image="Mediterranean_flag" translatesAutoresizingMaskIntoConstraints="NO" id="oPh-9q-IGs">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="199"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mediterranean Sea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcQ-uJ-MmO">
+                                        <rect key="frame" x="0.0" y="199" width="374" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvB-Pp-EVh">
+                                        <rect key="frame" x="0.0" y="229" width="373" height="101.5"/>
+                                        <string key="text">The Mediterranean Sea is located between Europe in the north, Africa in the south and Asia in the east. It is the largest sea in the world in terms of area, and there are in a total 23 countries in  this sea,  there are many small and ...</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fP-OB-u54">
+                                        <rect key="frame" x="0.0" y="330.5" width="374" height="97.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Learn More "/>
+                                        <connections>
+                                            <segue destination="8KO-nb-99f" kind="show" id="pDc-dY-aYO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0fP-OB-u54" secondAttribute="trailing" id="CYY-Y5-KlE"/>
+                                    <constraint firstItem="lcQ-uJ-MmO" firstAttribute="centerY" secondItem="y4W-rE-TG4" secondAttribute="centerY" id="KRa-ib-Q4B"/>
+                                    <constraint firstItem="lcQ-uJ-MmO" firstAttribute="centerX" secondItem="y4W-rE-TG4" secondAttribute="centerX" id="x1U-4L-r6b"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PBp-Fb-kpm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y4W-rE-TG4" firstAttribute="centerY" secondItem="Dw6-jd-O7T" secondAttribute="centerY" id="6fa-NG-0fu"/>
+                            <constraint firstItem="y4W-rE-TG4" firstAttribute="centerX" secondItem="Dw6-jd-O7T" secondAttribute="centerX" id="HBK-C7-n12"/>
+                            <constraint firstAttribute="trailing" secondItem="y4W-rE-TG4" secondAttribute="trailing" constant="20" id="Jip-XF-f3p"/>
+                            <constraint firstItem="y4W-rE-TG4" firstAttribute="centerY" secondItem="Dw6-jd-O7T" secondAttribute="centerY" id="OWc-cH-Aby"/>
+                            <constraint firstItem="PBp-Fb-kpm" firstAttribute="bottom" secondItem="y4W-rE-TG4" secondAttribute="bottom" constant="200" id="myT-49-RhV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="W17-a5-DJ4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="22w-da-qbx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6366.666666666667" y="156.69642857142856"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="X4j-v2-Xsu">
+            <objects>
+                <tableViewController id="8KO-nb-99f" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="SAe-j5-4MI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gej-HO-Bqe">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="688"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mutableString key="text">The Mediterranean Sea is located between Europe in the north, Africa in the south and Asia in the east. It is the largest sea in the world in terms of area, and there are in a total 23 countries in  this sea,  there are many small and large islands .
+
+- countries of the Mediterranean : Spain, France, Monaco, Slovenia, Croatia, Bosnia and Herzegovina , Montenegro , Gibraltar - Territory, Italy, Algeria, Malta, Morocco, Albania, Greece, Turkey, Syria, Cyprus, Lebanon, Israel, Palestine ,Egypt, Libya , Tunisia .
+
+- There are many things to do in the Mediterranean region you can do Watersports, horse ride, Swim with dolphins , see archaeological tour, discovery of a giant aquarium , visit to a marine nature park , Scuba Diving .</mutableString>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <connections>
+                            <outlet property="dataSource" destination="8KO-nb-99f" id="RI9-ih-Xr9"/>
+                            <outlet property="delegate" destination="8KO-nb-99f" id="QGI-5W-2bV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="JBZ-EO-ZU9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Q7-D4-PI1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7240.579710144928" y="156.69642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Mediterranean_flag" width="750" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

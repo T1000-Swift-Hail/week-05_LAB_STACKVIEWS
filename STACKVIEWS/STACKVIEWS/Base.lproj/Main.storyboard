@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="STACKVIEWS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Italy2" translatesAutoresizingMaskIntoConstraints="NO" id="i3v-eY-cDo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="bottom" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="hXK-cH-UGr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="530"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="rbK-Lt-m4o">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="210"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="210" id="Kq4-pn-HZK"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Kza-wm-4GM">
+                                        <rect key="frame" x="34" y="245" width="380" height="61"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Italy ..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoO-rG-RlW">
+                                                <rect key="frame" x="0.0" y="0.0" width="274" height="61"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="51"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" alpha="0.45000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mo4-Ly-13Z">
+                                                <rect key="frame" x="289" y="0.0" width="91" height="31"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="mo4-Ly-13Z" secondAttribute="trailing" id="B28-fZ-0PN"/>
+                                            <constraint firstAttribute="width" constant="380" id="DOH-DG-blA"/>
+                                            <constraint firstItem="GoO-rG-RlW" firstAttribute="leading" secondItem="Kza-wm-4GM" secondAttribute="leading" id="F07-0I-VT0"/>
+                                            <constraint firstItem="GoO-rG-RlW" firstAttribute="top" secondItem="Kza-wm-4GM" secondAttribute="top" id="NWx-bP-FVM"/>
+                                            <constraint firstItem="mo4-Ly-13Z" firstAttribute="top" secondItem="Kza-wm-4GM" secondAttribute="top" id="YKu-Gv-mHl"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brt-Qf-JPO">
+                                        <rect key="frame" x="4.5" y="341" width="409.5" height="123"/>
+                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                        <string key="text">The Italian Republic is a country located partly in southern Europe on the Italian Peninsula and also on the two largest islands in the Mediterranean: Sicily and Sardinia. Italy shares its northern alpine borders with France, Switzerland, Austria and Slovenia</string>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8i6-ze-ein">
+                                        <rect key="frame" x="316.5" y="499" width="97.5" height="31"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Learn More"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rbK-Lt-m4o" firstAttribute="top" secondItem="hXK-cH-UGr" secondAttribute="top" id="0z3-Q1-Hf0"/>
+                                    <constraint firstItem="rbK-Lt-m4o" firstAttribute="leading" secondItem="hXK-cH-UGr" secondAttribute="leading" id="EhQ-AF-pgz"/>
+                                    <constraint firstAttribute="trailing" secondItem="rbK-Lt-m4o" secondAttribute="trailing" id="rKo-aV-sbm"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hXK-cH-UGr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1XI-t6-1OE"/>
+                            <constraint firstItem="hXK-cH-UGr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="C6q-mx-7Uo"/>
+                            <constraint firstAttribute="trailing" secondItem="hXK-cH-UGr" secondAttribute="trailing" id="FlV-Jv-fsh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Italy2" width="640" height="1136"/>
+        <image name="images" width="284" height="177"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

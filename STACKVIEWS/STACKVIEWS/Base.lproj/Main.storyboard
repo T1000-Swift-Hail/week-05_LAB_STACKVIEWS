@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="STACKVIEWS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PxJ-Iu-5FO">
+                                <rect key="frame" x="10" y="44" width="394" height="386"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="الروضه" translatesAutoresizingMaskIntoConstraints="NO" id="oPU-Ir-KGe">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="Spu-jf-tDa"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Ys2-cy-cjU">
+                                        <rect key="frame" x="0.0" y="208" width="394" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AL-RAWDAH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boK-Yh-h2l">
+                                                <rect key="frame" x="0.0" y="0.0" width="98" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pl7-u8-au4">
+                                                <rect key="frame" x="351.5" y="0.0" width="42.5" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="m6a-Y8-cuB">
+                                        <rect key="frame" x="0.0" y="247" width="394" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="hGG-Qo-mtO"/>
+                                        </constraints>
+                                        <string key="text">Al-Rawda city is a historical city, its terrain is hills, valleys and mountains. It is a very elegant city, characterized by the freshness of water, so it is distinguished by the cultivation of pomegranates, dates, figs and grapes. It is also located in the middle of the neighboring villages....</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efh-hp-HUc">
+                                        <rect key="frame" x="296.5" y="355" width="97.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Laern more"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="m6a-Y8-cuB" secondAttribute="trailing" id="AWA-PQ-TNQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="oPU-Ir-KGe" secondAttribute="trailing" id="EaO-27-lSd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ys2-cy-cjU" secondAttribute="trailing" id="J1v-MV-Kmj"/>
+                                    <constraint firstItem="oPU-Ir-KGe" firstAttribute="leading" secondItem="PxJ-Iu-5FO" secondAttribute="leading" id="RsP-si-nmO"/>
+                                    <constraint firstItem="Ys2-cy-cjU" firstAttribute="leading" secondItem="PxJ-Iu-5FO" secondAttribute="leading" id="Zsb-MR-ggT"/>
+                                    <constraint firstItem="m6a-Y8-cuB" firstAttribute="leading" secondItem="PxJ-Iu-5FO" secondAttribute="leading" id="dbm-ED-gEe"/>
+                                    <constraint firstItem="oPU-Ir-KGe" firstAttribute="top" secondItem="PxJ-Iu-5FO" secondAttribute="top" id="fnk-Vt-1FJ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PxJ-Iu-5FO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6fh-8g-JuW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PxJ-Iu-5FO" secondAttribute="trailing" constant="10" id="iYx-4Y-Ytp"/>
+                            <constraint firstItem="PxJ-Iu-5FO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="mh2-vD-qQK"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="70.982142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="الروضه" width="259" height="194"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

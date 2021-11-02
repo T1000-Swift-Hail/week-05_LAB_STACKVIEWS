@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lJr-3l-lQ4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="VgB-bm-NQF">
+            <objects>
+                <viewController id="lJr-3l-lQ4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tbk-RU-PMk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="RJG-db-gef">
+                                <rect key="frame" x="10" y="44" width="394" height="502.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parise" translatesAutoresizingMaskIntoConstraints="NO" id="z3J-aT-RRW">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="iKp-bk-S7Q"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="PnD-gC-ytJ">
+                                        <rect key="frame" x="8" y="216" width="386" height="32.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paris" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMm-RO-MIn">
+                                                <rect key="frame" x="0.0" y="0.0" width="56.5" height="32.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEW-zV-9F8">
+                                                <rect key="frame" x="343.5" y="0.0" width="42.5" height="32.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUa-Fy-t7Z">
+                                        <rect key="frame" x="4" y="264.5" width="390" height="191"/>
+                                        <string key="text">Paris is famed as a must-see destination for very good reason. History buffs will be delighted by the many historic buildings and monuments, fashionistas will be pleased to shop in the trendiest boutiques , gourmands will be thrilled to sample the outstanding food and wine, and the list could go on and on...</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLO-wX-DDk">
+                                        <rect key="frame" x="296.5" y="471.5" width="97.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Learn More"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="z3J-aT-RRW" secondAttribute="trailing" id="Ejq-ZO-YKZ"/>
+                                    <constraint firstItem="z3J-aT-RRW" firstAttribute="top" secondItem="RJG-db-gef" secondAttribute="top" id="YP2-RL-NEc"/>
+                                    <constraint firstItem="z3J-aT-RRW" firstAttribute="leading" secondItem="RJG-db-gef" secondAttribute="leading" id="ip8-wA-jLV"/>
+                                    <constraint firstAttribute="trailing" secondItem="PnD-gC-ytJ" secondAttribute="trailing" id="tCW-O7-4yq"/>
+                                    <constraint firstItem="PnD-gC-ytJ" firstAttribute="leading" secondItem="RJG-db-gef" secondAttribute="leading" constant="8" id="wQN-Db-rZ4"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cbn-nQ-ZhP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RJG-db-gef" firstAttribute="leading" secondItem="Tbk-RU-PMk" secondAttribute="leading" constant="10" id="IuC-ta-SPa"/>
+                            <constraint firstItem="RJG-db-gef" firstAttribute="top" secondItem="cbn-nQ-ZhP" secondAttribute="top" id="JgH-0r-ZiM"/>
+                            <constraint firstAttribute="trailing" secondItem="RJG-db-gef" secondAttribute="trailing" constant="10" id="KUA-q5-KDm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vFK-bd-0W5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEC-XM-Wce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1234.7826086956522" y="50.892857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="parise" width="279" height="181"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
